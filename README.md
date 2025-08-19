@@ -49,4 +49,4 @@ A simple **web-based exercise logger** to track and manage your gym workouts. Ad
 
 ## Author
 
-**Your Name** – Gym enthusiast and web developer
+**Sumeet** – Gym enthusiast and web developer
