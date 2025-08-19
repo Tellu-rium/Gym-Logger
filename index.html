@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gym Workout Planner</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Imports tailwind class from CDN just like NPM install thing -->
+  </head>
+  <body class="bg-blue-100 min-h-[100vh] flex flex-col">
+
+
+    <div class="bg-blue-700 text-white py-4 px-6 shadow-md">  <!-- We can use <header> for better readability also SEO hota hai kuch-->
+        <h1 class="text-2xl font-bold font-sans">🏋️ Gym Workout Planner</h1>
+    </div>
+
+
+  <div class="flex-grow container mx-auto p-6"> <!-- Container adds max width depending upon screen size to fit the flexbox -->
+      
+    <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Create Workout Plan</h2>
+
+        <div class="flex flex-col gap-2">
+          <input
+            id="planName"
+            type="text"
+            placeholder="e.g., Upper Day 1, Full Body"
+            class="border rounded-lg px-3 py-3"
+          />
+
+          <div class="flex flex-col md:flex-row gap-2">
+            <input
+              id="exerciseName"
+              type="text"
+              placeholder="Exercise Name"
+              class="border rounded-lg px-3 py-3 flex-1"
+            />
+            <input
+              id="sets"
+              min="1"
+              type="number"
+              placeholder="Sets"
+              class="border rounded-lg px-2 py-2 min-w-0 w-19"
+            />
+            <input
+              id="reps"
+              min="1"
+              type="number"
+              placeholder="Reps"
+              class="border rounded-lg px-2 py-2 min-w-0 w-19"
+            />
+            <input
+              id="weight"
+              min="0"
+              type="number"
+              placeholder="Weight (kg)"
+              class="border rounded-lg px-2 py-2 w-29"
+            />
+            <button
+              id="addExerciseBtn"
+              class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 active:scale-95"
+            >
+              ➕ Add Exercise
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Your Workout Plans</h2>
+        <div id="plansContainer" class="space-y-4">
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-blue-700 text-white text-center py-4">
+      <p>Made by ||GOAT|| Sumeet</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
